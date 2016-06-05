@@ -52,7 +52,7 @@ $total = $response->topartists->{'@attr'}->total; // return total images
         </span>
 
         <form class="form-search" action="<?php $_SERVER['PHP_SELF']; ?>" method="get" role="search">
-            <input type="search" id="query" placeholder="Search" required ng-change='change()' ng-model='query'
+            <input type="search" id="query" placeholder="Search with country" required ng-change='change()' ng-model='query'
                    value="{{selected}}" autocomplete="off"/>
             <ul class='{{state}}' ng-show='query' id="countryList">
                 <li ng-click='select(item)' ng-repeat='item in items | filter: query'>
@@ -100,6 +100,7 @@ $total = $response->topartists->{'@attr'}->total; // return total images
                         echo '<li>';
                         echo "<a id=\"thumb_img\" href=\"/php/photo.php?artist=$artistName\" title=\"View $artistName\">";
                         echo "<img src=\"" . $photo_url . "\" width=\"150\" height=\"150\" alt=\"$artistName\" />";
+			echo "<p>".$single_photo->name."</p>";
                         echo "</a>";
                         echo '</li>';
 
