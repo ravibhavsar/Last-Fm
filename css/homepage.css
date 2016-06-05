@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+.form-search
+{
+   margin: 0.5em 0;
+   text-align: right;
+   clear: both;
+   display: inline-block;
+   overflow: hidden;
+   white-space: nowrap;
+
+}
+
+input[type=search] {
+   background-color: white;
+   background-position: 10px 10px;
+   background-repeat: no-repeat;
+   padding-left: 40px;
+   width: 600px;
+   line-height: 25px;
+}
+
+input[type=submit] {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   text-decoration: none;
+   cursor: pointer;
+   line-height: 25px;
+}
+
+.thumbnails
+{
+   border-bottom: 3px solid #FFFFFF;
+}
+
+.thumbnails__list,
+{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.thumbnails__list li
+{
+   display: inline-block;
+   width: 19%;
+   margin-top: 1%;
+   margin-right: 1%;
+}
+
+#nav {
+   position: relative;
+   width: 100%;
+}
+
+
+#next {
+   position: absolute;
+   right: 0px;
+   width: 300px;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+   font-family: "FontAwesome", sans-serif;
+}
+
+::-webkit-input-placeholder:before {
+   font-family: "FontAwesome";
+   content: "";
+   margin-left: 7px;
+   color: #C3D0DB;
+}
+
+.wrap {
+   margin: 100px auto;
+   width: 200px;
+   position: relative;
+   color: #000000;
+}
+
+#query {
+   line-height: 25px;
+   border: 1px solid #C3D0DB;
+   margin: 0;
+   padding-left: 10px;
+   z-index: 0;
+   outline: none;
+}
+#query:focus {
+   border-width: 2px;
+   position: relative;
+   top: -1px;
+   left: -1px;
+}
+
+#countryList {
+   margin-top: 2px;
+   padding-left: 10px;
+   border: 1px solid #C3D0DB;
+   line-height: 25px;
+   background-color: #fff;
+   cursor: pointer;
+   width: 600px;
+   position: relative;
+   top: -1px;
+   left: -1px;
+}
+
+.closed {
+   display: none;
+}
+
+.opened {
+   display: block;
+}
+
+#country {
+   line-height: 25px;
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: 10px;
+   background-color: #fff;
+   margin-top: 10px;
+   width: 550px;
+}
+#country i {
+   font-size: 10px;
+   color: #000000;
+   cursor: pointer;
+   margin-left: 2px;
+}
