@@ -176,7 +176,7 @@ $total = $response->topartists->{'@attr'}->total; // return total images
         echo "<p><b style='color: brown'>$total</b> Photos in Gallery</p>";
         echo "</div>";
     } else {
-        echo "<p><b style='color: brown'>$total</b> Photos found with country " . $tag . "</p>";
+        echo "<p><b style='color: brown'>0 </b> Photos found with country " . $tag . "</p>";
     }
     ?>
 
