@@ -1,14 +1,13 @@
-I have developed Last Fm Image Gallery With PHP. (which was specified in Test Description - (php only)).
+I have developed mini web application which connects to Last.fm api to retrieve data.
 
 You will need the php-environment-set-up to run the code. You can set it up in MAMP or Vagrant or any other services
 you are familiar with.
 
-The code has Two directories -
-css - 3 files, php - 2 files
-and two files index.php and README.md at root of code.
+There are no external packages used. PHP Last.fm API library is also not used hence there is no special installation required to run this code.
 
-There are no external packages used. I have not used  PHP Last.fm API library as well as it was specified not to
-use any external packages. Hence there is no special installation required to run this code.
-
-By default, the code search with country "Australia". So Do not get surprise when you hit the page
+By default, the code search with country "spain". So Do not get surprise when you hit the page
 for the first time and you see some results.
+
+The search field uses angular.js to create country dropdown. When you search with any text, it will show you the list of country. Selected the country, and hit enter or click search button to see the results. Clicking on the thumbnail takes you to next page where it displays top 5 tracks of the artist. You can hit the link to listen the track.
+
+
